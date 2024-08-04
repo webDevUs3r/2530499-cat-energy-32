@@ -8,6 +8,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
@@ -165,11 +169,11 @@
 
     <div class="contacts__map">
       <picture>
-        <sourcemedia="(min-width: 1280px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png" width="1400" height="400">
+        <source media="(min-width: 1280px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png" width="1400" height="400">
 
-          <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">
+        <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png" width="768" height="400">
 
-          <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Санкт-Петербург, ул Большая Конюшенная, д. 19/8">
+        <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Санкт-Петербург, ул Большая Конюшенная, д. 19/8">
       </picture>
     </div>
   </section>
