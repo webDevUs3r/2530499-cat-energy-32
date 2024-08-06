@@ -1,3 +1,12 @@
 .page-footer {
+  background-color: $bg-color-base;
+}
 
+.page-footer__copyright {
+  color: inherit;
+  font-size: 16px;
+  line-height: 125%;
+
+  text-decoration: none;
+  cursor: pointer;
 }
