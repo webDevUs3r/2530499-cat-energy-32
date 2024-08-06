@@ -1,0 +1,38 @@
+.result {
+  background-color: $bg-color-base-special;
+}
+
+.result__title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 111%;
+  text-align: center;
+  color: $text-color-base;
+}
+
+.result__stats-name {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: $text-color-base;
+}
+
+.result__stats-difinition {
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.result__total {
+  margin: 0;
+
+  font-family: $font-secondary;
+  line-height: 143%;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-color-base;
+}

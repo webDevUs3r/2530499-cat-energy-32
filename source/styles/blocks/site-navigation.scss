@@ -1,0 +1,11 @@
+.site-navigation {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  color: $text-color-base;
+}
+
+.site-navigation__link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

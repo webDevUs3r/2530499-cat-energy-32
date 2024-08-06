@@ -1,0 +1,13 @@
+.product-preview {
+  background-color: $bg-color-base;
+}
+
+.product-preview__title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 154%;
+  text-transform: uppercase;
+  color: $text-color-base;
+}

@@ -1,0 +1,19 @@
+
+.hero__title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: $text-color-accent;
+}
+
+.hero__slogan {
+  margin: 0;
+
+  font-family: $font-secondary;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $text-color-accent;
+}

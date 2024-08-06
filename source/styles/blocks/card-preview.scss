@@ -1,0 +1,15 @@
+.card-preview__title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.card-preview__link {
+  text-decoration: none;
+  cursor: pointer;
+}

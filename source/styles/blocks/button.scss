@@ -1,0 +1,35 @@
+.button {
+  box-sizing: border-box;
+
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  text-align: center;
+
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.button--primary {
+  color: $text-color-accent;
+  background-color: $button-bg-color-primary;
+}
+
+.button--secondary {
+  color: $special-dark-grey;
+  background-color: $button-bg-color-secondary;
+}
+
+.button--size-s {
+  padding: 10px 15px;
+
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.button--size-m {
+  padding: 15px;
+
+  font-size: 20px;
+  line-height: 130%;
+}
