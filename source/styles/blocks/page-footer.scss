@@ -1,12 +1,67 @@
 .page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   background-color: $bg-color-base;
 }
 
+.page-footer__wrapper {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid #0000ff;
+}
+
+.page-footer__line {
+  width: 100%;
+}
+
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
   color: inherit;
   font-size: 16px;
   line-height: 125%;
 
   text-decoration: none;
   cursor: pointer;
+
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $button-bg-color-primary;
+  }
+
+  &:active::after {
+    background-color: $button-bg-color-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright::after {
+  content: "";
+
+  width: 27px;
+  height: 34px;
+
+  background-color: $special-grey-3;
+  mask-image: url("../../icons/stack.svg#logo-academy");
+  mask-repeat: no-repeat;
 }

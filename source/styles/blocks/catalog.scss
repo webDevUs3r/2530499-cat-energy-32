@@ -1,8 +1,4 @@
-.extra-products {
-  padding-top: 25px;
-}
-
-.extra-products__wrapper {
+.catalog__wrapper {
   box-sizing: border-box;
 
   width: 320px;
@@ -14,14 +10,9 @@
   outline: 1px solid #0000ff;
 }
 
-.extra-products__title {
-  margin-bottom: 36px;
-}
-
-.extra-products__list {
+.catalog__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
 
   list-style: none;
 }

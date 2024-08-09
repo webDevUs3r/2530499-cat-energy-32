@@ -1,3 +1,26 @@
+.contacts {
+  background-color: $bg-color-base;
+}
+
+.contacts__wrapper {
+  box-sizing: border-box;
+
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid #0000ff;
+}
+
+.contacts__content {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .contacts__text {
   margin: 0;
 
@@ -11,4 +34,14 @@
 .contacts__address {
   font-style: normal;
   line-height: 143%;
+}
+
+.contacts__map {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__map-image {
+  display: block;
 }

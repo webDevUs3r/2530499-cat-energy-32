@@ -1,5 +1,27 @@
+
+.card-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &::before {
+    content: "";
+
+    width: 30px;
+    height: 30px;
+    margin-bottom: 23px;
+
+    background-image: url("../../icons/stack.svg#icon-plus");
+    background-repeat: no-repeat;
+  }
+}
+
 .card-empty__title {
   margin: 0;
+  margin-bottom: 8px;
 
   font-family: $font-secondary;
   font-weight: 400;
@@ -12,8 +34,14 @@
 
 .card-empty__text {
   margin: 0;
+  margin-bottom: 21px;
 
   font-size: 12px;
   line-height: 133%;
   text-align: center;
+  color: $special-dark-grey;
+}
+
+.card-empty__button {
+  width: 100%;
 }

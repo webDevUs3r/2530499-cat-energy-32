@@ -1,11 +1,14 @@
 .button {
   box-sizing: border-box;
 
+  display: inline-block;
+
   font-family: $font-secondary;
   text-transform: uppercase;
   text-align: center;
 
   text-decoration: none;
+  background-color: transparent;
   cursor: pointer;
   border: none;
 }
@@ -13,11 +16,27 @@
 .button--primary {
   color: $text-color-accent;
   background-color: $button-bg-color-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba($text-color-accent, 0.3);
+  }
 }
 
 .button--secondary {
   color: $special-dark-grey;
   background-color: $button-bg-color-secondary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $special-grey-2;
+  }
 }
 
 .button--size-s {

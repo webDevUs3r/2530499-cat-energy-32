@@ -1,0 +1,40 @@
+.product-extra {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.product-extra__title {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.product-extra__params {
+  margin: 0;
+  margin-bottom: 15px;
+
+  line-height: 100%;
+  color: $special-dark-grey;
+}
+
+.product-extra__params-item {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+}
+
+.product-extra__params-value {
+  margin: 0;
+  margin-left: 10px;
+
+  text-align: right;
+}
+
+.product-extra__button {
+  width: 100%;
+}

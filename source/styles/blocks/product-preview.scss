@@ -1,13 +1,56 @@
 .product-preview {
+  position: relative;
+
+  padding: 30px 20px 18px;
+
   background-color: $bg-color-base;
+}
+
+.product-preview::before {
+  content: "";
+
+  position: absolute;
+}
+
+.product-preview--theme-weight-gain::before {
+  top: 24px;
+  left: 13px;
+
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../../icons/stack.svg#weight-gain");
+  background-repeat: no-repeat;
+}
+
+.product-preview--theme-weight-loss::before {
+  top: 21px;
+  left: 20px;
+
+  width: 50px;
+  height: 53px;
+
+  background-image: url("../../icons/stack.svg#weight-loss");
+  background-repeat: no-repeat;
 }
 
 .product-preview__title {
   margin: 0;
+  margin-left: 71px;
+  margin-bottom: 29px;
 
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
   color: $text-color-base;
+}
+
+.product-preview__text {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.product-preview__line {
+  margin-bottom: 15px;
 }

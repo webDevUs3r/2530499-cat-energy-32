@@ -1,4 +1,19 @@
 .characteristics {
+  margin: 0;
+
   font-size: 12px;
   line-height: 133%;
+  color: $special-dark-grey;
+}
+
+.characteristics__item {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+}
+
+.characteristics__value {
+  justify-self: end;
+
+  margin: 0;
+  margin-left: 10px;
 }

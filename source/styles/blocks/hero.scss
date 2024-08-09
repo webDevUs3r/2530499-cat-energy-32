@@ -1,19 +1,52 @@
+.hero {
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  background-image: url("../../images/hero-bg-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.hero__wrapper {
+  box-sizing: border-box;
+
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid #0000ff;
+}
 
 .hero__title {
   margin: 0;
+  margin-bottom: 25px;
 
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 100%;
+  font-weight: 400;
   text-align: center;
   color: $text-color-accent;
 }
 
 .hero__slogan {
   margin: 0;
+  margin-bottom: 29px;
 
   font-family: $font-secondary;
   line-height: 100%;
   text-transform: uppercase;
+  text-align: center;
   color: $text-color-accent;
+}
+
+.hero__image {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  width: 100%;
 }

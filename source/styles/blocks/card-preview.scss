@@ -1,5 +1,37 @@
+.card-preview {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  grid-template-areas:
+    "image  info"
+    "button button";
+  row-gap: 17px;
+
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.card-preview__info {
+  grid-area: info;
+}
+
+.card-preview__info-link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .card-preview__title {
   margin: 0;
+  margin-bottom: 14px;
+  margin-right: 64px;
 
   font-family: $font-secondary;
   font-weight: 400;
@@ -10,6 +42,23 @@
 }
 
 .card-preview__link {
-  text-decoration: none;
+  grid-area: image;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.card-preview__button {
+  grid-area: button;
 }
