@@ -1,3 +1,26 @@
 .product-line {
   padding: 0;
 }
+
+.product-line__wrapper {
+  box-sizing: border-box;
+
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid #0000ff;
+}
+
+.product-line__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

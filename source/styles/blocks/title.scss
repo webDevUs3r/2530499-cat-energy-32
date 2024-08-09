@@ -1,0 +1,29 @@
+.title {
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: $text-color-base;
+}
+
+
+.title--decorative-line {
+  display: flex;
+  align-items: start;
+  flex-shrink: 0;
+  gap: 40px;
+}
+
+.title--decorative-line::after {
+  content: "";
+
+  height: 2px;
+  flex-grow: 1;
+  min-width: 20px;
+  margin-top: 12px;
+  margin-right: -20px;
+
+  background-color: $button-bg-color-primary;
+}

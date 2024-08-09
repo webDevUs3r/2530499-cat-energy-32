@@ -1,9 +1,25 @@
 .result {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
   background-color: $bg-color-base-special;
+}
+
+.result__wrapper {
+  box-sizing: border-box;
+
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid #0000ff;
 }
 
 .result__title {
   margin: 0;
+  margin-bottom: 40px;
 
   font-family: $font-secondary;
   font-weight: 400;
@@ -13,22 +29,65 @@
   color: $text-color-base;
 }
 
+.result__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.result__stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 32px;
+}
+
+.result__stats-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  width: 124px;
+}
+
 .result__stats-name {
-  font-family: $font-secondary;
-  font-size: 24px;
+  box-sizing: border-box;
+
+  z-index: 2;
+
+  width: 87px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -10px;
+
+  font-size: 12px;
   line-height: 100%;
+  color: $special-dark-grey;
   text-align: center;
-  color: $text-color-base;
+
+  background-color: $bg-color-base-special;
 }
 
 .result__stats-difinition {
-  font-size: 12px;
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: 14px 10px 17px;
+  margin: 0;
+
+  font-family: $font-secondary;
+  font-size: 24px;
   line-height: 100%;
+  text-transform: uppercase;
+  color: $text-color-base;
   text-align: center;
+
+  border-radius: 5px;
+  outline: 1px solid $special-grey;
 }
 
 .result__total {
   margin: 0;
+  margin-bottom: 20px;
 
   font-family: $font-secondary;
   line-height: 143%;

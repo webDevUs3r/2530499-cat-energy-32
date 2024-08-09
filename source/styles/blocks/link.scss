@@ -1,4 +1,8 @@
 .link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 100%;
@@ -7,4 +11,25 @@
   color: $text-color-base;
 
   text-decoration: none;
+
+  &:hover::after,
+  &:focus::after {
+    width: 32px;
+
+    background-size: 32px 12px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+
+    width: 24px;
+    height: 12px;
+
+    background-image: url("../../icons/stack.svg#icon-arrow");
+    background-repeat: no-repeat;
+  }
 }

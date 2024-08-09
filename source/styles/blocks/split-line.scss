@@ -1,0 +1,81 @@
+
+.split-line {
+  display: block;
+  height: 1px;
+
+  background-color: #d9d9d9;
+
+  &--theme-light {
+    background-color: $special-grey-2;
+  }
+
+  &--theme-special {
+    background-color: $special-grey;
+  }
+
+  &--width-outside {
+    position: relative;
+  }
+
+  &--width-outside::before {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    content: "";
+
+    width: 20px;
+    height: 1px;
+
+    background-color: inherit;
+  }
+
+  &--width-outside::after {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+
+    content: "";
+
+    width: 20px;
+    height: 1px;
+
+    background-color: inherit;
+  }
+}
+
+
+// .split-line--width-outside {
+//   position: relative;
+// }
+
+// .split-line--width-outside::before {
+//   position: absolute;
+//   bottom: 0;
+//   left: -20px;
+
+//   content: "";
+
+//   width: 20px;
+//   height: 1px;
+
+//   background-color: inherit;
+// }
+
+// .split-line--width-outside::after {
+//   position: absolute;
+//   bottom: 0;
+//   right: -20px;
+
+//   content: "";
+
+//   width: 20px;
+//   height: 1px;
+
+//   background-color: inherit;
+// }
+
+// .split-line--theme-dark {
+//   background-color: $special-grey-2;
+// }
+

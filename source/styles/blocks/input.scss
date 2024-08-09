@@ -1,11 +1,34 @@
 .input {
+  box-sizing: border-box;
+
+  padding: 10px 20px;
+
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  border: 1px solid #e7e7e7;
+  outline: none;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    padding: 9px 19px;
+
+    border-width: 2px;
+    border-color: $special-dark-grey;
+  }
+
+  &--danger {
+    border-color: $status-error;
+  }
 }
 
-.input::placeholder {
-  color: $special-dark-grey;
-}
