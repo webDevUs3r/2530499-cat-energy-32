@@ -10,6 +10,12 @@
   color: $special-dark-grey;
 }
 
+.page--inner .page__content {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
 .page__headline {
   box-sizing: border-box;
 
@@ -29,4 +35,10 @@
   font-size: 36px;
   line-height: 100%;
   color: $text-color-base;
+}
+
+.page__content {
+  @media (min-width: $desktop-width) {
+    margin-top: -143px;
+  }
 }
