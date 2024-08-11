@@ -1,0 +1,1 @@
+var e=document.querySelector(".toggle-button"),t=document.querySelector(".main-navigation");e.addEventListener("click",()=>{e.classList.contains("toggle-button--opened")?(e.classList.remove("toggle-button--opened"),t.classList.remove("main-navigation--opened")):(e.classList.add("toggle-button--opened"),t.classList.add("main-navigation--opened"))});
