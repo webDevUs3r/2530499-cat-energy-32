@@ -11,5 +11,3 @@ menuButton.addEventListener('click', () => {
     mainNav.classList.remove('main-navigation--opened');
   }
 });
-
-
