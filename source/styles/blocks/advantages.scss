@@ -1,6 +1,16 @@
 .advantages {
   padding-top: 20px;
   padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 30px;
+  }
 }
 
 .advantages__wrapper {
@@ -13,6 +23,14 @@
   margin-right: auto;
 
   outline: 1px solid #0000ff;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .advantages__title {
@@ -25,6 +43,18 @@
   line-height: 111%;
   text-align: center;
   color: $text-color-base;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+
+    font-size: 60px;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -36,11 +66,69 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 249px);
+    gap: 77px 135px;
+
+    counter-reset: advantages;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 249px);
+    justify-content: space-between;
+
+    column-gap: 77px;
+
+    counter-reset: advantages;
+  }
 }
 
 .advantages__item {
   display: flex;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    flex-direction: column;
+    gap: 30px;
+
+    padding-top: 40px;
+    padding-bottom: 57px;
+
+    counter-increment: advantages;
+
+    &::after {
+      content: counter(advantages);
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      font-family: $font-secondary;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 100%;
+      text-align: center;
+      color: #f2f2f2;
+    }
+
+    &:nth-child(1) {
+      width: 230px;
+    }
+
+    &:nth-child(2) {
+      width: 246px;
+    }
+
+    &:nth-child(3) {
+      width: 247px;
+    }
+  }
 }
 
 .advantages__item::before {

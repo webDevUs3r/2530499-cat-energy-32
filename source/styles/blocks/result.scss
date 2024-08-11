@@ -3,6 +3,14 @@
   padding-bottom: 40px;
 
   background-color: $bg-color-base-special;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
 }
 
 .result__wrapper {
