@@ -126,44 +126,51 @@
 
     <section class="result">
       <div class="result__wrapper">
-        <h2 class="result__title">Живой пример</h2>
 
-        <p class="result__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+        <div class="result__content-column">
+          <h2 class="result__title">Живой пример</h2>
 
-        <dl class="result__stats">
-          <div class="result__stats-item">
-            <dt class="result__stats-name">снижение веса</dt>
-            <dd class="result__stats-difinition">5 кг</dd>
+          <p class="result__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+
+          <dl class="result__stats">
+            <div class="result__stats-item">
+              <dt class="result__stats-name">снижение веса</dt>
+              <dd class="result__stats-difinition">5 кг</dd>
+            </div>
+            <div class="result__stats-item">
+              <dt class="result__stats-name">затрачено времени</dt>
+              <dd class="result__stats-difinition">60 дней</dd>
+            </div>
+          </dl>
+
+          <p class="result__total">
+            <span class="result__total-name">Затраты на питание:</span>
+            <span class="result__total-price">15 000 руб.</span>
+          </p>
+        </div>
+
+        <div class="result__slider slider-compare">
+          <div class="slider-compare__image-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.png 1x, images/slide-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
+
+              <img class="slider-compare__image slider-compare__image--before" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" width="280" height="256" alt="До диеты" style="width: 50%">
+            </picture>
+
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.png 1x, images/slide-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
+
+              <img class="slider-compare__image slider-compare__image--after" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" width="280" height="256" alt="После диеты">
+            </picture>
           </div>
-          <div class="result__stats-item">
-            <dt class="result__stats-name">затрачено времени</dt>
-            <dd class="result__stats-difinition">60 дней</dd>
+
+          <div class="slider-compare__scrubber-wrapper" style="left: 50%">
+            <button class="slider-compare__scrubber" type="button">
+              <span class="visually-hidden">Сменить слайд</span>
+            </button>
           </div>
-        </dl>
-
-        <p class="result__total">
-          <span class="result__total-name">Затраты на питание:</span>
-          <span class="result__total-price">15 000 руб.</span>
-        </p>
-
-        <div class="result__slider slider">
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.png 1x, images/slide-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
-
-            <img class="result__image slider__image" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" width="280" height="256" alt="До диеты">
-          </picture>
-
-          <picture>
-            <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.png 1x, images/slide-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
-
-            <img class="result__image slider__image" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" width="280" height="256" alt="До диеты">
-          </picture>
-
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Сменить слайд</span>
-          </button>
         </div>
       </div>
     </section>
