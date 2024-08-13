@@ -1,5 +1,7 @@
 
 .card-empty {
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +19,27 @@
     background-image: url("../../icons/stack.svg#icon-plus");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 40px;
+
+    border: 2px solid $basic-grey;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+
+    &::before {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .card-empty__title {
@@ -30,6 +53,21 @@
   text-transform: uppercase;
   text-align: center;
   color: $text-color-base-special;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .card-empty__text {
@@ -40,8 +78,25 @@
   line-height: 133%;
   text-align: center;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    margin-left: 40px;
+
+    font-size: 16px;
+    line-height: 112%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .card-empty__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }

@@ -25,6 +25,18 @@
   margin-right: auto;
 
   outline: 1px solid #0000ff;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    padding-top: 65px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding-top: 74px;
+  }
 }
 
 .page__title {
@@ -35,6 +47,10 @@
   font-size: 36px;
   line-height: 100%;
   color: $text-color-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .page__content {

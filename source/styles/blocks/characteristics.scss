@@ -4,11 +4,27 @@
   font-size: 12px;
   line-height: 133%;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .characteristics__item {
   display: grid;
   grid-template-columns: repeat(2, calc(100% / 2));
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .characteristics__value {
