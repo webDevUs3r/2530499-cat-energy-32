@@ -6,7 +6,6 @@
   font-size: 20px;
   line-height: 100%;
   text-transform: uppercase;
-  color: $text-color-base;
 
   list-style: none;
   background-color: #ffffff;
@@ -27,6 +26,7 @@
     line-height: 100%;
   }
 }
+
 
 .site-navigation__item {
   border-bottom: 1px solid #e6e6e6;
@@ -76,15 +76,17 @@
 }
 
 .site-navigation__link {
+  $color: $text-color-base;
+
   display: inline-block;
 
   width: 100%;
   padding-top: 22px;
   padding-bottom: 24px;
-
-  color: inherit;
+  color: $color;
   text-decoration: none;
   text-align: center;
+
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -94,29 +96,42 @@
     padding-bottom: 10px;
     width: auto;
 
-    &[href]:hover,
-    &[href]:focus-visible {
-      color: rgba($text-color-base, 0.6);
+    &:not(.site-navigation__link--active):hover,
+    &:not(.site-navigation__link--active):focus-visible {
+      color: rgba($color, 0.6);
     }
 
-    &[href]:active {
-      color: rgba($text-color-base, 0.3);
+    &:not(.site-navigation__link--active):active {
+      color: rgba($color, 0.3);
     }
   }
 
   @media (min-width: $desktop-width) {
-    color: $text-color-accent;
+    $color: $text-color-accent;
+    color: $color;
 
-    &[href]:hover,
-    &[href]:focus-visible {
-      color: rgba($text-color-base, 0.6);
+    &:not(.site-navigation__link--active):hover,
+    &:not(.site-navigation__link--active):focus-visible {
+      color: rgba($color, 0.6);
     }
 
-    &[href]:active {
-      color: rgba($text-color-base, 0.3);
+    &:not(.site-navigation__link--active):active {
+      color: rgba($color, 0.3);
     }
   }
 }
+
+.site-navigation--inner .site-navigation__link {
+  @media (min-width: $desktop-width) {
+    $color: $text-color-base;
+    color: $color;
+
+    &:not(.site-navigation__link--active):hover {
+      color: rgba($color, 0.6);
+    }
+  }
+}
+
 
 .site-navigation__link--active {
   @media (min-width: $tablet-width) {
@@ -143,5 +158,11 @@
     &::after {
       background-color: #ffffff;
     }
+  }
+}
+
+.site-navigation--inner .site-navigation__link--active {
+  &::after {
+    background-color: $basic-green;
   }
 }
