@@ -6,8 +6,15 @@
   font-size: 24px;
   line-height: 100%;
   color: $text-color-base;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
 
 .title--decorative-line {
   display: flex;

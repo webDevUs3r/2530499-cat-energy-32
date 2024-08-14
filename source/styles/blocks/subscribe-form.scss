@@ -1,8 +1,33 @@
+.subscribe-form {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 376px auto;
+    grid-template-areas: "input button";
+    // align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
 .subscribe-form__email-field {
   width: 100%;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: input;
+
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-form__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+  }
 }
