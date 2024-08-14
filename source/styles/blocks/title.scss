@@ -19,11 +19,12 @@
 .title--decorative-line {
   display: flex;
   align-items: start;
-  flex-shrink: 0;
   gap: 40px;
 }
 
 .title--decorative-line::after {
+  flex-shrink: 0;
+
   content: "";
 
   height: 2px;
@@ -33,4 +34,17 @@
   margin-right: -20px;
 
   background-color: $button-bg-color-primary;
+}
+
+.title--decorative-line::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+
+    height: 2px;
+    min-width: 20px;
+    margin-top: 12px;
+    margin-left: -20px;
+
+    background-color: $button-bg-color-primary;
+  }
 }

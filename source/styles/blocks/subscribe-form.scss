@@ -5,11 +5,10 @@
     display: grid;
     grid-template-columns: 376px auto;
     grid-template-areas: "input button";
-    // align-items: start;
   }
 
   @media (min-width: $desktop-width) {
-
+    grid-template-columns: 496px auto;
   }
 }
 
