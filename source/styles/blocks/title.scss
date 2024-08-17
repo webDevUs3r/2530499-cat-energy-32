@@ -1,4 +1,65 @@
+/* With Flexbox */
+// .title {
+//   margin: 0;
+
+//   font-family: $font-secondary;
+//   font-weight: 400;
+//   font-size: 24px;
+//   line-height: 100%;
+//   color: $text-color-base;
+
+//   @media (min-width: $tablet-width) {
+//     font-size: 32px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     font-size: 40px;
+//   }
+// }
+
+// .title--decorative-line {
+//   display: flex;
+//   align-items: start;
+//   // gap: 40px;
+// }
+
+// .title--decorative-line::after {
+//   flex-shrink: 0;
+
+//   content: "";
+
+//   height: 2px;
+//   flex-grow: 1;
+//   min-width: 20px;
+//   margin-top: 12px;
+//   margin-right: -20px;
+//   margin-left: 40px;
+
+//   background-color: $button-bg-color-primary;
+// }
+
+// .title--decorative-line::before {
+//   @media (min-width: $tablet-width) {
+//     content: "";
+
+//     height: 2px;
+//     min-width: 20px;
+//     margin-top: 12px;
+//     margin-left: -20px;
+//     margin-right: 40px;
+
+//     background-color: $button-bg-color-primary;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     margin-right: 20px;
+//     margin-left: -40px;
+//   }
+// }
+
+/* With Position: absolute */
 .title {
+  width: fit-content;
   margin: 0;
 
   font-family: $font-secondary;
@@ -6,6 +67,8 @@
   font-size: 24px;
   line-height: 100%;
   color: $text-color-base;
+
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -17,22 +80,26 @@
 }
 
 .title--decorative-line {
-  display: flex;
-  align-items: start;
-  // gap: 40px;
+  position: relative;
+
+  padding-right: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
 }
 
 .title--decorative-line::after {
-  flex-shrink: 0;
-
   content: "";
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
   height: 2px;
-  flex-grow: 1;
-  min-width: 20px;
+  width: 100vw;
   margin-top: 12px;
-  margin-right: -20px;
-  margin-left: 40px;
 
   background-color: $button-bg-color-primary;
 }
@@ -41,17 +108,15 @@
   @media (min-width: $tablet-width) {
     content: "";
 
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
     height: 2px;
-    min-width: 20px;
+    width: 100vw;
     margin-top: 12px;
-    margin-left: -20px;
-    margin-right: 40px;
 
     background-color: $button-bg-color-primary;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 20px;
-    margin-left: -40px;
   }
 }

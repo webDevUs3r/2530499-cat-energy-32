@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: title;
+    margin-left: -40px; /* Выносим за сетку */
   }
 }
 
