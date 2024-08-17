@@ -19,7 +19,7 @@
 .title--decorative-line {
   display: flex;
   align-items: start;
-  gap: 40px;
+  // gap: 40px;
 }
 
 .title--decorative-line::after {
@@ -32,6 +32,7 @@
   min-width: 20px;
   margin-top: 12px;
   margin-right: -20px;
+  margin-left: 40px;
 
   background-color: $button-bg-color-primary;
 }
@@ -44,7 +45,13 @@
     min-width: 20px;
     margin-top: 12px;
     margin-left: -20px;
+    margin-right: 40px;
 
     background-color: $button-bg-color-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-left: -40px;
   }
 }

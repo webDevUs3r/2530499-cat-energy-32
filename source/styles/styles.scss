@@ -4,8 +4,11 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 
-/* BLOCKS */
+/* HELPERS */
+@import "./blocks/container.scss";
 @import "./blocks/visually-hidden.scss";
+
+/* BLOCKS */
 @import "./blocks/button.scss";
 @import "./blocks/toggle-button.scss";
 @import "./blocks/link.scss";

@@ -16,29 +16,13 @@
 }
 
 .page-footer__wrapper {
-  box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  outline: 1px solid #0000ff;
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
-
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
   }
 }
 

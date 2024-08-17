@@ -15,43 +15,41 @@
 </head>
 
 <body class="page">
-  <header class="page__header page-header">
-    <div class="page-header__wrapper">
-      <nav class="page-header__main-navigation main-navigation">
-        <div class="main-navigation__top">
-          <a class="main-navigation__logo logo" href="#">
-            <picture>
-              <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="262" height="59">
-              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
-              <img class="logo__image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
-            </picture>
-          </a>
+  <header class="page__header page-header container">
+    <nav class="page-header__main-navigation main-navigation">
+      <div class="main-navigation__top">
+        <a class="main-navigation__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="262" height="59">
+            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="174" height="50">
+            <img class="logo__image" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
 
-          <button class="main-navigation__toggle toggle-button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
+        <button class="main-navigation__toggle toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
 
-        <ul class="main-navigation__site-navigation site-navigation">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link site-navigation__link--active" href="#">Главная</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Каталог продукции</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="main-navigation__site-navigation site-navigation">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link site-navigation__link--active" href="#">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page__content">
     <h1 class="visually-hidden">Питание для котов | Cat Energy</h1>
 
     <section class="hero">
-      <div class="hero__wrapper">
+      <div class="hero__wrapper container">
         <div class="hero__content">
           <h2 class="hero__title">Функциональное питание для котов</h2>
 
@@ -71,61 +69,57 @@
       </div>
     </section>
 
-    <section class="product-line">
-      <div class="product-line__wrapper">
-        <h2 class="visually-hidden">Линейки продуктов</h2>
+    <section class="product-line container">
+      <h2 class="visually-hidden">Линейки продуктов</h2>
 
-        <ul class="product-line__list">
-          <li class="product-line__item product-preview product-preview--theme-weight-loss">
-            <h3 class="product-preview__title">похудение</h3>
+      <ul class="product-line__list">
+        <li class="product-line__item product-preview product-preview--theme-weight-loss">
+          <h3 class="product-preview__title">похудение</h3>
 
-            <p class="product-preview__text">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
+          <p class="product-preview__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
 
-            <span class="product-preview__line split-line"></span>
+          <span class="product-preview__line split-line"></span>
 
-            <a class="product-preview__link link" href="#">каталог slim</a>
-          </li>
+          <a class="product-preview__link link" href="#">каталог slim</a>
+        </li>
 
-          <li class="product-line__item product-preview product-preview--theme-weight-gain">
-            <h3 class="product-preview__title">Набор массы</h3>
+        <li class="product-line__item product-preview product-preview--theme-weight-gain">
+          <h3 class="product-preview__title">Набор массы</h3>
 
-            <p class="product-preview__text">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
+          <p class="product-preview__text">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
 
-            <span class="product-preview__line split-line"></span>
+          <span class="product-preview__line split-line"></span>
 
-            <a class="product-preview__link link" href="#">каталог pro</a>
-          </li>
-        </ul>
-      </div>
+          <a class="product-preview__link link" href="#">каталог pro</a>
+        </li>
+      </ul>
     </section>
 
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
+    <section class="advantages container">
+      <h2 class="advantages__title">Как это работает</h2>
 
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--theme-leaf">
-            Функциональное питание <br>содержит только полезные <br>питательные вещества.
-          </li>
-          <li class="advantages__item advantages__item--theme-powder">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </li>
-          <li class="advantages__item advantages__item--theme-eat">
-            Замените один-два приема <br>обычной еды на наше <br>функциональное питание.
-          </li>
-          <li class="advantages__item advantages__item--theme-watch">
-            Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!
-          </li>
-        </ul>
-      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--theme-leaf">
+          Функциональное питание <br>содержит только полезные <br>питательные вещества.
+        </li>
+        <li class="advantages__item advantages__item--theme-powder">
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+        </li>
+        <li class="advantages__item advantages__item--theme-eat">
+          Замените один-два приема <br>обычной еды на наше <br>функциональное питание.
+        </li>
+        <li class="advantages__item advantages__item--theme-watch">
+          Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!
+        </li>
+      </ul>
     </section>
 
     <section class="result">
-      <div class="result__wrapper">
+      <div class="result__wrapper container">
 
         <div class="result__content-column">
           <h2 class="result__title">Живой пример</h2>
@@ -183,7 +177,7 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
 
-    <div class="contacts__wrapper">
+    <div class="contacts__wrapper container">
       <div class="contacts__content">
         <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
 
@@ -201,7 +195,7 @@
   </section>
 
   <footer class="page__footer page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo logo-second" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="logo-second__image" src="images/logo-second.svg" width="128" height="25" alt="Логотип Cat Energy">
       </a>

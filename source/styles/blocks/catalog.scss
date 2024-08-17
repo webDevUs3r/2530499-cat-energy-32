@@ -1,22 +1,3 @@
-.catalog__wrapper {
-  box-sizing: border-box;
-
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  outline: 1px solid #0000ff;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
-}
 
 .catalog__list {
   margin: 0;
