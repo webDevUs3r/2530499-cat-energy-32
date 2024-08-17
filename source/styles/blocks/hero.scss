@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center 0;
 
+  @media (min-resolution) {
+    background-image: url("../../images/hero-bg-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 0;
@@ -57,6 +61,12 @@
 
       background-image: url("../../images/hero-bg-desktop@1x.png");
       background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background-image: url("../../images/hero-bg-desktop@2x.png");
+      }
     }
   }
 }
