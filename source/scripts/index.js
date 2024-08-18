@@ -31,12 +31,9 @@ const changeModificatorOnButton = () => {
       heroButton.classList.remove('button--size-m');
     }
   }
-}
-
+};
 
 if (heroButton) {
   changeModificatorOnButton();
   window.addEventListener('resize', changeModificatorOnButton);
 }
-
-
