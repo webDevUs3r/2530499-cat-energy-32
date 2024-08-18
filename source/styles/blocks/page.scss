@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
-  color: $special-dark-grey;
+  color: $text-color-base;
 }
 
 .page--inner .page__content {
@@ -25,6 +25,20 @@
   margin-right: auto;
 
   outline: 1px solid #0000ff;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+
+    // padding-top: 65px;
+    padding-top: 40px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    // padding-top: 74px;
+    padding-top: 59px;
+  }
 }
 
 .page__title {
@@ -34,7 +48,11 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  color: $text-color-base;
+  color: $text-color-base-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
 .page__content {

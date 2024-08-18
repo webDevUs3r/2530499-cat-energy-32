@@ -3,27 +3,52 @@
   padding-bottom: 40px;
 
   background-color: $bg-color-base;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .page-footer__wrapper {
-  box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
 
-  outline: 1px solid #0000ff;
+.page-footer__logo {
+  width: 128px;
+  height: 25px;
 }
 
 .page-footer__line {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    width: 212px;
+    margin-left: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    margin-left: 416px;
+  }
 }
 
 .page-footer__copyright {
@@ -40,28 +65,36 @@
   text-decoration: none;
   cursor: pointer;
 
+  &::after {
+    content: "";
+
+    width: 27px;
+    height: 34px;
+
+    background-color: $icon-bg;
+    mask-image: url("../../icons/stack.svg#logo-academy");
+    mask-repeat: no-repeat;
+  }
 
   &:hover::after,
   &:focus::after {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
   }
 
   &:active::after {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
 
-.page-footer__copyright::after {
-  content: "";
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-left: auto;
 
-  width: 27px;
-  height: 34px;
-
-  background-color: $special-grey-3;
-  mask-image: url("../../icons/stack.svg#logo-academy");
-  mask-repeat: no-repeat;
+    &::after {
+      margin-left: 23px;
+    }
+  }
 }

@@ -1,22 +1,41 @@
 .subscribe {
   padding-top: 40px;
   padding-bottom: 40px;
-}
 
-.subscribe__wrapper {
-  box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 632px 1fr;
+    grid-template-areas:
+      "title title title"
+      ".     text  ."
+      ".     form  .";
+    gap: 24px;
 
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-  outline: 1px solid #0000ff;
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 752px 1fr;
+
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
 }
 
 .subscribe__title {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    margin-left: -40px;
+  }
 }
 
 .subscribe__text {
@@ -27,5 +46,20 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: $text-color-base;
+  color: $text-color-base-2;
+
+  @media (min-width: $tablet-width) {
+    grid-area: text;
+
+    margin-bottom: 0;
+
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
+    grid-area: form;
+  }
 }
