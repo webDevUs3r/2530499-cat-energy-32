@@ -16,15 +16,15 @@
   height: 22px;
 
   mask-repeat: no-repeat;
-  background-color: $special-grey-3;
+  background-color: $icon-bg;
 
   &:hover,
   &:focus {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
   }
 
   &:active {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
     opacity: 0.3;
   }
 }

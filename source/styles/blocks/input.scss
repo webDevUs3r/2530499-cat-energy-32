@@ -7,27 +7,27 @@
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
-  color: $special-dark-grey;
+  color: $input-text;
 
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-border;
   outline: none;
 
   &::placeholder {
-    color: $special-dark-grey;
+    color: $input-text;
   }
 
   &:hover {
-    border-color: $special-grey;
+    border-color: $input-border-hover;
   }
 
   &:focus {
     padding: 9px 19px;
 
     border-width: 2px;
-    border-color: $special-dark-grey;
+    border-color: $input-border-focus;
   }
 
   &--danger {
-    border-color: $status-error;
+    border-color: $input-border-error;
   }
 }

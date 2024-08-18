@@ -23,22 +23,6 @@
   }
 }
 
-// .subscribe__wrapper {
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: 1fr 632px 1fr;
-//     grid-template-areas:
-//       "title title title"
-//       ".     text  ."
-//       ".     form  .";
-//     gap: 24px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     grid-template-columns: 1fr 752px 1fr;
-//   }
-// }
-
 .subscribe__title {
   margin-bottom: 32px;
 
@@ -62,7 +46,7 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: $text-color-base;
+  color: $text-color-base-2;
 
   @media (min-width: $tablet-width) {
     grid-area: text;

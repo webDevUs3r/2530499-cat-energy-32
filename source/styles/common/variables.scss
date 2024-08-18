@@ -2,27 +2,87 @@
 $font-primary: "Lato", sans-serif;
 $font-secondary: "Oswald", sans-serif;
 
-$text-color-base: #000000;
-$text-color-accent: #ffffff;
-$text-color-base-special: #111111;
-
-$bg-color-base: #f2f2f2; // ex. basic-grey
-$bg-color-dark-base: #000000;
-$bg-color-base-special: #eaeaea;
-
-$button-bg-color-primary: #68b738; // ex. basic-green
-$button-bg-color-secondary: #f2f2f2; // ex. basic-grey
-
 $basic-green: #68b738; // basic-green
+$basic-green-2: #5eaa2f; // basic-green-2
 $basic-grey: #f2f2f2; // basic-grey
-$special-grey-2: #ebebeb; // special-grey-2
+$basic-grey-2: #eaeaea;
+$basic-grey-3: #e7e7e7;
+$basic-grey-4: #d9d9d9;
+$basic-grey-5: #e6e6e6;
 $special-grey: #cdcdcd; // special-grey
-$special-grey-3: #666666; // special-grey-2
+$special-grey-2: #ebebeb; // special-grey-2
+$special-grey-3: #666666;
 $special-dark-grey: #444444; // special-dark-grey
 $special-dark-grey-2: #222222; // special-dark-grey-2
+$special-dark-grey-3: #111111;
+$basic-black: #000000;
+$basic-white: #ffffff;
 $status-error: #ff8282; //status-error
-$basic-green-2: #5eaa2f; // basic-green-2
 
 $tablet-width: 768px;
 $desktop-width: 1280px;
 $mobile-width-only: 767px;
+
+
+$button-bg-primary: $basic-green;
+$button-bg-primary-hover: $basic-green-2;
+$button-bg-secondary: $basic-grey;
+$button-bg-secondary-hover: $special-grey-2;
+$button-text-primary: $text-color-accent;
+$button-text-primary-active: rgba($button-text-primary, 0.3);
+$button-text-secondary: $special-dark-grey;
+
+$bg-basic-1: $basic-white;
+$bg-basic-2: $basic-grey; // #f2f2f2
+$bg-basic-3: $basic-grey-2; // #eaeaea
+$bg-second: $basic-green; // #68b738
+$bg-second-2: rgba($bg-second, 0.85);
+$bg-second-3: rgba($bg-second, 0.6);
+
+
+$text-color-base: $special-dark-grey; // #444444
+$text-color-base-2: $basic-black; // #000000
+$text-color-special: $basic-grey; // #f2f2f2
+$text-color-special-2: $special-dark-grey-2; // #222222
+$text-color-special-3: $special-dark-grey-3; // #111111
+$text-color-accent: $basic-white;
+
+$border-base: $basic-grey-4; // #d9d9d9
+$border-second: $special-grey-2; // #ebebeb
+$border-third: $special-grey; // #cdcdcd
+$border-fourth: $basic-grey-5; // #e6e6e6
+$border-accent: $basic-white;
+$border-special: $basic-green;
+
+$input-border: $basic-grey-3;
+$input-border-hover: $special-grey;
+$input-border-focus: $special-dark-grey;
+$input-border-error: $status-error;
+$input-text: $text-color-base;
+
+$icon-bg: $special-grey-3;
+$icon-bg-hover: $basic-green;
+
+/*
+$bg-color-base
+$bg-color-accent
+
+$text-color
+$text-color-accent/inverse
+$text-color-base
+$text-color-second
+$text-color-hover
+$text-color-active
+
+$button-text
+$button-text-hover
+$button-text-active
+
+$button-bg-primary
+$button-bg-secondary
+$button-bg-primary-hover
+$button-bg-primary-active
+$button-bg-secondary-hover
+$button-bg-secondary-active
+$button-text
+*/

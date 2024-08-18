@@ -1,7 +1,11 @@
 .slider-compare {
   position: relative;
 
-  background-color: $bg-color-base-special;
+  background-color: $bg-basic-3;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .slider-compare__image-wrapper {
@@ -29,11 +33,11 @@
   background-color: $bg-color-base-special;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 30%, $bg-color-base-special 30%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 30%, $bg-basic-3 30%);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 26.5%, $bg-color-base-special 26.5%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 26.6%, $bg-basic-2 26.6%);
   }
 }
 
@@ -81,11 +85,11 @@
 
   &:hover,
   &:focus-visible {
-    background-color: $basic-green;
+    background-color: $bg-second;
   }
 
   &:active {
-    background-color: $basic-green-2;
+    background-color: $bg-second;
     opacity: 0.6;
   }
 }

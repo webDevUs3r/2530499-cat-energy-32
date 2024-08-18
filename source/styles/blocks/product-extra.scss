@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
-  color: $special-dark-grey-2;
+  color: $text-color-special-2;
 
   @media (min-width: $tablet-width) {
     grid-area: title;
@@ -46,7 +46,6 @@
   margin-bottom: 15px;
 
   line-height: 143%;
-  color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     grid-area: params;

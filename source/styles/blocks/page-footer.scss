@@ -71,18 +71,18 @@
     width: 27px;
     height: 34px;
 
-    background-color: $special-grey-3;
+    background-color: $icon-bg;
     mask-image: url("../../icons/stack.svg#logo-academy");
     mask-repeat: no-repeat;
   }
 
   &:hover::after,
   &:focus::after {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
   }
 
   &:active::after {
-    background-color: $button-bg-color-primary;
+    background-color: $icon-bg-hover;
   }
 
   &:active {

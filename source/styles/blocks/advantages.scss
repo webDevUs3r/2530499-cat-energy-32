@@ -22,7 +22,7 @@
   font-size: 36px;
   line-height: 111%;
   text-align: center;
-  color: $text-color-base;
+  color: $text-color-base-2;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
@@ -94,7 +94,7 @@
       font-size: 280px;
       line-height: 100%;
       text-align: center;
-      color: #f2f2f2;
+      color: $text-color-special;
     }
 
     &:nth-child(1) {
@@ -119,7 +119,7 @@
   width: 60px;
   height: 60px;
 
-  background-color: $button-bg-color-primary;
+  background-color: $bg-second;
   background-position: center;
   background-repeat: no-repeat;
 }

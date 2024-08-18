@@ -3,7 +3,7 @@
 
   padding: 30px 20px 18px;
 
-  background-color: $bg-color-base;
+  background-color: $bg-basic-2;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -96,7 +96,7 @@
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
-  color: $text-color-base;
+  color: $text-color-base-2;
 
   @media (min-width: $tablet-width) {
     grid-area: title;
@@ -123,6 +123,7 @@
 
     margin-bottom: 48px;
 
+    color: $text-color-base-2;
     font-size: 16px;
     line-height: 150%;
   }

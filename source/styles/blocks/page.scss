@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
-  color: $special-dark-grey;
+  color: $text-color-base;
 }
 
 .page--inner .page__content {
@@ -48,7 +48,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  color: $text-color-base;
+  color: $text-color-base-2;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

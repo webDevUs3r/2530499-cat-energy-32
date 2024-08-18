@@ -52,7 +52,7 @@
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-  color: $text-color-base-special;
+  color: $text-color-special-3;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
@@ -77,7 +77,6 @@
   font-size: 12px;
   line-height: 133%;
   text-align: center;
-  color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
     margin-right: 40px;
