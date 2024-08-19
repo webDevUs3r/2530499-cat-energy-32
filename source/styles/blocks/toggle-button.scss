@@ -21,8 +21,8 @@
   width: 24px;
 
 
-  background-color: $bg-color-dark-base;
-  box-shadow: 0 8px 0 0 $bg-color-dark-base, 0 16px 0 0 $bg-color-dark-base;
+  background-color: $text-color-base-2;
+  box-shadow: 0 8px 0 0 $text-color-base-2, 0 16px 0 0 $text-color-base-2;
 }
 
 .toggle-button--opened::before,
@@ -43,6 +43,6 @@
 }
 
 .toggle-button--opened::after {
-  background-color: $bg-color-dark-base;
+  background-color: $text-color-base-2;
   transform: rotate(-45deg);
 }

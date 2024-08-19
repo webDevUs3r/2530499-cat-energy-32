@@ -23,6 +23,12 @@ $tablet-width: 768px;
 $desktop-width: 1280px;
 $mobile-width-only: 767px;
 
+$text-color-base: $special-dark-grey; // #444444
+$text-color-base-2: $basic-black; // #000000
+$text-color-special: $basic-grey; // #f2f2f2
+$text-color-special-2: $special-dark-grey-2; // #222222
+$text-color-special-3: $special-dark-grey-3; // #111111
+$text-color-accent: $basic-white;
 
 $button-bg-primary: $basic-green;
 $button-bg-primary-hover: $basic-green-2;
@@ -38,14 +44,6 @@ $bg-basic-3: $basic-grey-2; // #eaeaea
 $bg-second: $basic-green; // #68b738
 $bg-second-2: rgba($bg-second, 0.85);
 $bg-second-3: rgba($bg-second, 0.6);
-
-
-$text-color-base: $special-dark-grey; // #444444
-$text-color-base-2: $basic-black; // #000000
-$text-color-special: $basic-grey; // #f2f2f2
-$text-color-special-2: $special-dark-grey-2; // #222222
-$text-color-special-3: $special-dark-grey-3; // #111111
-$text-color-accent: $basic-white;
 
 $border-base: $basic-grey-4; // #d9d9d9
 $border-second: $special-grey-2; // #ebebeb

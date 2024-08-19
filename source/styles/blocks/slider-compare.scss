@@ -30,7 +30,7 @@
 
   object-position: top left;
   object-fit: none;
-  background-color: $bg-color-base-special;
+  background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 30%, $bg-basic-3 30%);
