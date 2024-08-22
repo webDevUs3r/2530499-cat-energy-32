@@ -1,7 +1,7 @@
 .product-preview {
   position: relative;
 
-  padding: 30px 20px 18px;
+  padding: 30px 20px 19px;
 
   background-color: $bg-basic-2;
 
@@ -12,14 +12,14 @@
       "title  ."
       "text   ."
       "button .";
-    padding: 77px 53px 53px;
+    padding: 77px 53px 62px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     padding-left: 52px;
     padding-right: 52px;
-    padding-bottom: 55px;
+    padding-bottom: 61px;
   }
 }
 
@@ -46,6 +46,8 @@
 
     width: 268px;
     height: 200px;
+
+    background-image: url("../../icons/stack.svg#weight-gain-tablet");
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +77,8 @@
 
     width: 200px;
     height: 211px;
+
+    background-image: url("../../icons/stack.svg#weight-loss-tablet");
   }
 
   @media (min-width: $desktop-width) {
@@ -116,12 +120,12 @@
 
 .product-preview__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     grid-area: text;
 
-    margin-bottom: 48px;
+    margin-bottom: 57px;
 
     color: $text-color-base-2;
     font-size: 16px;
@@ -129,7 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 32px;
   }
 }
 
@@ -142,7 +146,7 @@
 }
 
 .product-preview__line {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: none;

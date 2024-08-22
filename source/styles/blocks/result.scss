@@ -9,14 +9,14 @@
     padding-bottom: 101px;
 
     background-color: transparent;
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 57.6%, $bg-basic-3 57.6%);
+    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 57.3%, $bg-basic-3 57.3%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 30px;
+    padding-top: 35px;
     padding-bottom: 75px;
 
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 26%, $bg-basic-2 26%);
+    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 27%, $bg-basic-2 27%);
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .result__content-column {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -40,7 +40,7 @@
       "text  text"
       "stats count";
 
-    margin-bottom: 99px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +82,7 @@
 
 .result__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     grid-area: text;
@@ -105,6 +105,7 @@
   gap: 32px;
 
   margin: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     grid-area: stats;
@@ -112,7 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 44px;
   }
 }
 
@@ -133,11 +134,11 @@
 
   z-index: 2;
 
-  width: auto;
-  max-width: calc(100% - 18px);
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: -10px;
+  width: min-content;
+  max-width: calc(100% - 20px);
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: -9px;
 
   font-size: 12px;
   line-height: 100%;
@@ -146,6 +147,7 @@
   background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     padding-left: 8px;
     padding-right: 8px;
 
@@ -164,7 +166,7 @@
   box-sizing: border-box;
 
   width: 100%;
-  padding: 14px 10px 17px;
+  padding: 13px 10px 17px;
   margin: 0;
 
   font-family: $font-secondary;
@@ -174,12 +176,12 @@
   color: $text-color-base-2;
   text-align: center;
 
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid $border-base;
 
   @media (min-width: $tablet-width) {
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 
     font-size: 30px;
     line-height: 123%;
@@ -188,9 +190,10 @@
 
 .result__total {
   display: flex;
+  justify-content: center;
+  gap: 3px;
 
   margin: 0;
-  margin-bottom: 20px;
 
   font-family: $font-secondary;
   line-height: 143%;
@@ -200,8 +203,9 @@
 
   @media (min-width: $tablet-width) {
     grid-area: count;
-    justify-self: end;
+    place-self: start end;
 
+    justify-content: none;
     flex-direction: column;
     gap: 9px;
 
@@ -217,7 +221,7 @@
     justify-self: start;
 
     flex-direction: row;
-    gap: 23px;
+    gap: 66px;
   }
 }
 
@@ -233,6 +237,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 1px;
     margin-right: 0;
   }
 }

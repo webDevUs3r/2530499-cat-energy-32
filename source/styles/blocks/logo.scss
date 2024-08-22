@@ -1,6 +1,4 @@
 .logo {
-  display: flex;
-
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -9,4 +7,8 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.logo__image {
+  display: block;
 }

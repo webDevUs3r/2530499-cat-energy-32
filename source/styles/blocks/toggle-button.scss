@@ -1,13 +1,15 @@
 .toggle-button {
   position: relative;
 
-  width: 24px;
+  width: 26px;
   height: 24px;
   padding: 0;
 
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  // outline: 1px solid green;
 }
 
 .toggle-button::before {
@@ -18,7 +20,7 @@
   top: 3px;
 
   height: 2px;
-  width: 24px;
+  width: 26px;
 
 
   background-color: $text-color-base-2;
@@ -30,19 +32,23 @@
   content: "";
 
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 0;
+  // right: -2px;
 
-  width: 24px;
+  width: 25px;
   height: 2px;
 }
 
 .toggle-button--opened::before {
+  // right: 4px;
+  left: 4px;
   box-shadow: none;
-  transform: rotate(45deg);
+  transform: rotate(47deg);
 }
 
 .toggle-button--opened::after {
+  left: 4px;
   background-color: $text-color-base-2;
   transform: rotate(-45deg);
 }

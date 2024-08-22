@@ -1,4 +1,5 @@
 .hero {
+  outline: 1px solid red;
   position: relative;
 
   padding-top: 27px;
@@ -24,6 +25,17 @@
   @media (min-width: $desktop-width) {
     padding-top: 143px;
     padding-bottom: 52px;
+
+    position: relative;
+
+    background-image: url("../../images/hero-bg-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    background-position: right 0 top 4px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/hero-bg-desktop@2x.png");
+    }
   }
 }
 
@@ -31,30 +43,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    position: relative;
-
-    &::after {
-      content: "";
-      z-index: -1;
-
-      position: absolute;
-      top: -143px;
-      right: -110px;
-
-      width: 720px;
-      height: 690px;
-
-      background-image: url("../../images/hero-bg-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-size: 720px 694px;
-    }
-
-    @media (min-resolution: 2dppx) {
-      &::after {
-        background-image: url("../../images/hero-bg-desktop@2x.png");
-      }
-    }
   }
 }
 
@@ -68,7 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 81px;
+    margin-top: 84px;
     margin-left: 80px;
   }
 }
@@ -95,7 +83,7 @@
 
 .hero__slogan {
   margin: 0;
-  margin-bottom: 313px;
+  margin-bottom: 302px;
 
   font-family: $font-secondary;
   line-height: 100%;
@@ -118,7 +106,7 @@
 
 .hero__image {
   position: absolute;
-  bottom: 43px;
+  bottom: 63px;
   left: 0;
   right: 0;
 
@@ -130,12 +118,12 @@
     position: static;
 
     margin: 0;
-    margin-top: -83px;
+    margin-top: -85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: -132px;
+    margin-top: 4px;
+    margin-left: -163px;
   }
 }
 

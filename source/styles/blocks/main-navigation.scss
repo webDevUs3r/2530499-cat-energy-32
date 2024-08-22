@@ -3,7 +3,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    align-items: start;
     justify-content: space-between;
 
     padding-top: 25px;
@@ -21,7 +22,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 64px;
+    top: 65px;
 
     display: block;
     width: 100%;
@@ -71,6 +72,8 @@
 }
 
 .main-navigation__toggle {
+  margin-top: -2px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -84,9 +87,11 @@
 
   @media (min-width: $tablet-width) {
     width: 436px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 475px;
+    padding-top: 20px;
   }
 }

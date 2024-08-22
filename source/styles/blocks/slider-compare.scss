@@ -4,7 +4,7 @@
   background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
+    background-color: #ffffff;
   }
 }
 
@@ -29,15 +29,14 @@
   max-width: fit-content;
 
   object-position: top left;
-  object-fit: none;
   background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 30%, $bg-basic-3 30%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 29.5%, $bg-basic-3 29.5%);
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, #ffffff, #ffffff 26.6%, $bg-basic-2 26.6%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 26.4%, $bg-basic-2 26.4%);
   }
 }
 

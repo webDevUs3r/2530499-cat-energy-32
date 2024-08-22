@@ -11,9 +11,13 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
+  @media (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

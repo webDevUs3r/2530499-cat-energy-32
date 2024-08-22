@@ -19,7 +19,10 @@
 
 .contacts__content {
   display: grid;
-  grid-template-columns: repeat(2, calc(100% / 2));
+  // grid-template-columns: repeat(2, calc(100% / 2));
+  // grid-template-columns: 125px 140px;
+  grid-template-columns: calc(100% / 2 - 15px) calc(100% / 2);
+  gap: 15px;
   padding-top: 26px;
   padding-bottom: 26px;
 
@@ -54,8 +57,14 @@
   color: $text-color-special-3;
 
   @media (min-width: $tablet-width) {
+    padding-top: 1px;
+
     font-size: 20px;
     line-height: 130%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -64,9 +73,17 @@
   line-height: 143%;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     font-size: 16px;
     line-height: 125%;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
