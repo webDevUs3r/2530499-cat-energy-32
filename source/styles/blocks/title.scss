@@ -1,74 +1,11 @@
-/* With Flexbox */
-// .title {
-//   margin: 0;
-
-//   font-family: $font-secondary;
-//   font-weight: 400;
-//   font-size: 24px;
-//   line-height: 100%;
-//   color: $text-color-base;
-
-//   @media (min-width: $tablet-width) {
-//     font-size: 32px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     font-size: 40px;
-//   }
-// }
-
-// .title--decorative-line {
-//   display: flex;
-//   align-items: start;
-//   // gap: 40px;
-// }
-
-// .title--decorative-line::after {
-//   flex-shrink: 0;
-
-//   content: "";
-
-//   height: 2px;
-//   flex-grow: 1;
-//   min-width: 20px;
-//   margin-top: 12px;
-//   margin-right: -20px;
-//   margin-left: 40px;
-
-//   background-color: $bg-second;
-// }
-
-// .title--decorative-line::before {
-//   @media (min-width: $tablet-width) {
-//     content: "";
-
-//     height: 2px;
-//     min-width: 20px;
-//     margin-top: 12px;
-//     margin-left: -20px;
-//     margin-right: 40px;
-
-//     background-color: $bg-secondy;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     margin-right: 20px;
-//     margin-left: -40px;
-//   }
-// }
-
-/* With Position: absolute */
 .title {
-  width: fit-content;
   margin: 0;
 
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
-  color: $text-color-base-2;
-
-  background-color: #ffffff;
+  color: $text-color-base;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -82,41 +19,26 @@
 .title--decorative-line {
   position: relative;
 
-  padding-right: 40px;
+  width: fit-content;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-  }
-}
-
-.title--decorative-line::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  height: 2px;
-  width: 100vw;
-  margin-top: 12px;
-
-  background-color: $bg-second;
+  background-color: #ffffff;
+  box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;
 }
 
 .title--decorative-line::before {
+  content: "";
+
+  position: absolute;
+  top: 42%;
+  right: 0;
+  z-index: -1;
+
+  width: 100vw;
+  height: 2px;
+
+  box-shadow: 100vw 0 #68b738;
+
   @media (min-width: $tablet-width) {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-
-    height: 2px;
-    width: 100vw;
-    margin-top: 12px;
-
-    background-color: $bg-second;
+    background-color: #68b738;
   }
 }
