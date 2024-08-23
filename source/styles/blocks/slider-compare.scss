@@ -29,6 +29,7 @@
   max-width: fit-content;
 
   object-position: top left;
+  object-fit: none;
   background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
