@@ -29,48 +29,40 @@
 }
 
 .site-navigation__item {
-  border-bottom: 1px solid $border-fourth;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
 
-  &:first-child {
-    border-top: 1px solid $border-fourth;
-  }
+    &::after {
+      content: "";
 
-  // Выпадающие полоски
-  // @media (max-width: $mobile-width-only) {
-  //   position: relative;
+      position: absolute;
+      right: 0;
+      bottom: 0;
 
-  //   &::after {
-  //     content: "";
+      height: 1px;
+      width: 100vw;
 
-  //     position: absolute;
-  //     left: -20px;
-  //     bottom: 0;
-
-  //     height: 1px;
-  //     width: 100%;
-
-  //     background-color: #e6e6e6;
-  //   }
-
-  //   &::before {
-  //     content: "";
-
-  //     position: absolute;
-  //     right: -20px;
-  //     bottom: 0;
-
-  //     height: 1px;
-  //     width: 100%;
-
-  //     background-color: #e6e6e6;
-  //   }
-  // }
-
-  @media (min-width: $tablet-width) {
-    border: none;
+      background-color: #e6e6e6;
+      box-shadow: 100vw 0 #e6e6e6;
+    }
 
     &:first-child {
-      border-top: none;
+      padding-top: 1px;
+
+      &::before {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        z-index: 5;
+        top: 0;
+
+        height: 1px;
+        width: 100vw;
+
+        background-color: #e6e6e6;
+        box-shadow: 100vw 0 #e6e6e6;
+      }
     }
   }
 }
@@ -82,7 +74,8 @@
 
   width: 100%;
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
+
   color: $color;
   text-decoration: none;
   text-align: center;
