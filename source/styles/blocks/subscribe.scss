@@ -17,8 +17,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 752px 1fr;
+    gap: 23px;
 
-    padding-top: 96px;
+    padding-top: 27px;
     padding-bottom: 104px;
   }
 }
@@ -30,10 +31,12 @@
     grid-area: title;
 
     margin-bottom: 42px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
+    margin-left: 0;
   }
 }
 

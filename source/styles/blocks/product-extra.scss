@@ -1,16 +1,16 @@
 .product-extra {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 263px;
+    grid-template-columns: 1fr 225px;
     grid-template-areas:
       "title  params"
       "button button";
-    gap: 20px 30px;
+    gap: 22px 30px;
 
-    padding: 26px 38px 28px;
+    padding: 26px 37px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,13 +18,13 @@
     grid-template-areas: "title params button";
     align-items: center;
     column-gap: 40px;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
   }
 }
 
 .product-extra__title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 
   font-family: $font-secondary;
   font-weight: 400;
@@ -43,27 +43,50 @@
 
 .product-extra__params {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   line-height: 143%;
 
   @media (min-width: $tablet-width) {
     grid-area: params;
+
     margin-bottom: 0;
 
     font-size: 16px;
     line-height: 125%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
   }
 }
 
 .product-extra__params-item {
   display: grid;
   grid-template-columns: repeat(2, calc(100% / 2));
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 59% 41%;
+  }
+}
+
+.product-extra__params-name {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .product-extra__params-value {
   margin: 0;
   margin-left: 10px;
+  margin-top: 1px;
+  padding-right: 2px;
 
   text-align: right;
 }

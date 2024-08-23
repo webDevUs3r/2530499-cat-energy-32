@@ -24,18 +24,21 @@
   margin-left: auto;
   margin-right: auto;
 
+  border-top: 1px solid $border-base;
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
 
-    // padding-top: 65px;
-    padding-top: 40px;
-    padding-bottom: 84px;
+    padding: 40px 30px 94px;
+
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    // padding-top: 74px;
-    padding-top: 59px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 49px;
   }
 }
 

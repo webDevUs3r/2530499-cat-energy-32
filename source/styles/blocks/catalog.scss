@@ -1,4 +1,7 @@
 
+.catalog {
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -9,21 +12,24 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    row-gap: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 63px 80px;
+    gap: 72px 80px;
   }
 }
 
 .catalog__item {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     display: flex;
 
     width: 324px;
 
     &--empty {
-      margin-top: 65px;
+      margin-top: 71px;
     }
   }
 

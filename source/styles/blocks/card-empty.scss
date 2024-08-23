@@ -7,14 +7,14 @@
   align-items: center;
 
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   &::before {
     content: "";
 
     width: 30px;
     height: 30px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     background-image: url("../../icons/stack.svg#icon-plus");
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     padding-right: 38px;
 
     &::before {
-      margin-bottom: 40px;
+      margin-bottom: 39px;
     }
   }
 }
@@ -72,7 +72,7 @@
 
 .card-empty__text {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   font-size: 12px;
   line-height: 133%;
@@ -97,5 +97,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -2px;
   }
 }
