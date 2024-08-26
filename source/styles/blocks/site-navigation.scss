@@ -42,8 +42,8 @@
       height: 1px;
       width: 100vw;
 
-      background-color: #e6e6e6;
-      box-shadow: 100vw 0 #e6e6e6;
+      background-color: $border-fourth;
+      box-shadow: 100vw 0 $border-fourth;
     }
 
     &:first-child {
@@ -60,8 +60,8 @@
         height: 1px;
         width: 100vw;
 
-        background-color: #e6e6e6;
-        box-shadow: 100vw 0 #e6e6e6;
+        background-color: $border-fourth;
+        box-shadow: 100vw 0 $border-fourth;
       }
     }
   }
