@@ -4,14 +4,20 @@
   padding-top: 27px;
   padding-bottom: 20px;
 
-  background-image: url("../../images/hero-bg-mobile@1x.webp");
+  background-image:
+    linear-gradient(to right, $bg-second-2, $bg-second-2),
+    url("../../images/hero-bg-mobile@1x.webp"),
+    linear-gradient(to right, #515358, #444348 30%);
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 320px 302px;
+  background-size: auto 302px, 320px 302px, auto 302px;
 
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/hero-bg-mobile@2x.webp");
+    background-image:
+      linear-gradient(to right, $bg-second-2, $bg-second-2),
+      url("../../images/hero-bg-mobile@2x.webp"),
+      linear-gradient(to right, #515358, #444348 30%);
   }
 
   @media (min-width: $tablet-width) {
@@ -27,13 +33,20 @@
 
     position: relative;
 
-    background-image: url("../../images/hero-bg-desktop@1x.webp");
+    background-image:
+      linear-gradient(to right, $bg-basic-1 0%, $bg-basic-1 50%, $bg-second-2 50%),
+      linear-gradient(to right, transparent 0%, transparent calc(50%), #403f43 calc(50%)),
+      url("../../images/hero-bg-desktop@1x.webp");
     background-repeat: no-repeat;
-    background-size: 720px 694px;
-    background-position: right 0 top 4px;
+    background-size: 100% 694px, 100% 694px, 1040px 694px;
+    background-position: left calc(50%) top 4px, left calc(50% + 1040px) top 4px, left calc(50% + 520px) top 4px;
+
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/hero-bg-desktop@2x.webp");
+      background-image:
+        linear-gradient(to right, $bg-basic-1 0%, $bg-basic-1 50%, $bg-second-2 50%),
+        linear-gradient(to right, transparent 0%, transparent calc(50%), #403f43 calc(50%)),
+        url("../../images/hero-bg-desktop@2x.webp");
     }
   }
 }
