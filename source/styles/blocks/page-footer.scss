@@ -80,6 +80,8 @@
   cursor: pointer;
 
   &::after {
+    flex-shrink: 0;
+
     content: "";
 
     width: 27px;

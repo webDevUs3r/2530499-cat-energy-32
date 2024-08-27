@@ -19,8 +19,6 @@
 
 .contacts__content {
   display: grid;
-  // grid-template-columns: repeat(2, calc(100% / 2));
-  // grid-template-columns: 125px 140px;
   grid-template-columns: calc(100% / 2 - 15px) calc(100% / 2);
   gap: 15px;
   padding-top: 26px;
@@ -108,16 +106,15 @@
 
 .contacts iframe {
   display: block;
-  border: none;
 
   width: 100%;
   min-width: 320px;
   height: 362px;
-
+  border: none;
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    height: 400px;
+    height: 401px;
   }
 
   @media (min-width: $desktop-width) {

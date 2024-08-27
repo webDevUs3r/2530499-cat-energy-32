@@ -1,6 +1,6 @@
 /* здесь используйте глобальные переменные */
-$font-primary: "Lato", sans-serif;
-$font-secondary: "Oswald", sans-serif;
+$font-primary: "Lato", "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
 
 $basic-green: #68b738; // basic-green
 $basic-green-2: #5eaa2f; // basic-green-2
@@ -20,7 +20,6 @@ $basic-white: #ffffff;
 $status-error: #ff8282; //status-error
 
 $tablet-width: 768px;
-// $desktop-width: 1280px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
 
@@ -61,27 +60,3 @@ $input-text: $text-color-base;
 
 $icon-bg: $special-grey-3;
 $icon-bg-hover: $basic-green;
-
-/*
-$bg-color-base
-$bg-color-accent
-
-$text-color
-$text-color-accent/inverse
-$text-color-base
-$text-color-second
-$text-color-hover
-$text-color-active
-
-$button-text
-$button-text-hover
-$button-text-active
-
-$button-bg-primary
-$button-bg-secondary
-$button-bg-primary-hover
-$button-bg-primary-active
-$button-bg-secondary-hover
-$button-bg-secondary-active
-$button-text
-*/
