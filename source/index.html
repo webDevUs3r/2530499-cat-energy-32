@@ -6,6 +6,22 @@
   <meta charset="UTF-8">
   <title>Главная страница | Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preload" media="(max-width: 767px)" href="images/hero-mobile@1x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(max-width: 767px) and (min-resolution: 2dppx)" href="images/hero-mobile@2x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 768px)" href="/images/hero-tablet@1x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 768px) and (min-resolution: 2dppx)" href="/images/hero-tablet@2x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 1440px)" href="/images/hero-desktop@1x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 1440px) and (min-resolution: 2dppx)" href="/images/hero-desktop@2x.webp" as="image" type="image/webp">
+
+  <link rel="preload" media="(max-width: 767px)" href="/images/hero-bg-mobile@1x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(max-width: 767px) and (min-resolution: 2dppx)" href="/images/hero-bg-mobile@2x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 1440px)" href="/images/hero-bg-desktop@1x.webp" as="image" type="image/webp">
+  <link rel="preload" media="(min-width: 1440px) and (min-resolution: 2dppx)" href="/images/hero-bg-desktop@2x.webp" as="image" type="image/webp">
+
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="scripts/index.js" as="script">
+
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
@@ -14,7 +30,7 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page">
+<body class="page page--theme-promo">
   <header class="page__header page-header container">
     <nav class="page-header__main-navigation main-navigation">
       <div class="main-navigation__top">
@@ -48,8 +64,8 @@
   <main class="page__content">
     <h1 class="visually-hidden">Питание для котов | Cat Energy</h1>
 
-    <section class="hero container">
-      <div class="hero__wrapper">
+    <section class="hero">
+      <div class="hero__wrapper  container">
         <div class="hero__content">
           <h2 class="hero__title">Функциональное питание для котов</h2>
 
@@ -59,6 +75,12 @@
         </div>
 
         <picture class="hero__image-wrapper">
+          <source media="(min-width: 1440px)" srcset="images/hero-desktop@1x.webp 1x, images/hero-desktop@2x.webp 2x" type="image/webp" width="552" height="499">
+
+          <source media="(min-width: 768px)" srcset="images/hero-tablet@1x.webp 1x, images/hero-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+
+          <source srcset="images/hero-mobile@1x.webp 1x, images/hero-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
+
           <source media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x" type="image/png" width="552" height="499">
 
           <source media="(min-width: 768px)" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x" type="image/png" width="709" height="609">
@@ -148,15 +170,23 @@
         <div class="result__slider slider-compare">
           <div class="slider-compare__image-wrapper">
             <picture>
+              <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.webp 1x, images/slide-tablet-before@2x.webp 2x" type="image/webp" width="560" height="512">
+
+              <source srcset="images/slide-mobile-before@1x.webp 1x, images/slide-mobile-before@2x.webp 2x" type="image/webp" width="280" height="256">
+
               <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.png 1x, images/slide-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
 
-              <img class="slider-compare__image slider-compare__image--before" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" width="280" height="256" alt="До диеты" style="width: 50%">
+              <img class="slider-compare__image slider-compare__image--before" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" loading="lazy" width="280" height="256" alt="До диеты">
             </picture>
 
             <picture>
+              <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.webp 1x, images/slide-tablet-after@2x.webp 2x" type="image/webp" width="560" height="512">
+
+              <source srcset="images/slide-mobile-after@1x.webp 1x, images/slide-mobile-after@2x.webp 2x" type="image/webp" width="280" height="256">
+
               <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.png 1x, images/slide-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
 
-              <img class="slider-compare__image slider-compare__image--after" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" width="280" height="256" alt="После диеты">
+              <img class="slider-compare__image slider-compare__image--after" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" loading="lazy" width="280" height="256" alt="После диеты">
             </picture>
           </div>
 
@@ -183,7 +213,7 @@
     </div>
 
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791663!2d30.320467111580058!3d59.93871647481049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1723903641111!5m2!1sen!2sru" width="320" height="362" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791663!2d30.320467111580058!3d59.93871647481049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1723903641111!5m2!1sen!2sru" width="320" height="362" allowfullscreen loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
     </div>
   </section>
 
