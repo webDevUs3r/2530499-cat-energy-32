@@ -1,6 +1,8 @@
 .gift {
   display: grid;
   grid-template-areas: "space";
+
+  background-color: $bg-second-2;
 }
 
 .gift__content {
