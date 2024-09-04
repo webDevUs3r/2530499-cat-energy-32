@@ -23,15 +23,14 @@
     background-repeat: no-repeat;
     background-size: 100% 694px, 100% 694px, 1040px 694px;
     background-position: left calc(50%) top 0, left calc(50% + 1040px) top 0, left calc(50% + 520px) top 0;
-
-
-    // @media (min-resolution: 2dppx) {
-    //   background-image:
-    //     linear-gradient(to right, $bg-basic-1 0%, $bg-basic-1 50%, $bg-second-2 50%),
-    //     linear-gradient(to right, transparent 0%, transparent 50%, #403f43 50%),
-    //     url("../../images/hero-bg-desktop@2x.webp");
-    // }
   }
+}
+
+.page--layout-sticky-footer {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+
+  height: 100vh;
 }
 
 .page__headline {

@@ -80,6 +80,7 @@
 
 .gift__image-wrapper {
   grid-area: space;
+  z-index: -1;
 }
 
 .gift__image {
