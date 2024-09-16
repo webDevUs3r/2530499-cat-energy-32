@@ -1,12 +1,22 @@
 .logo-second {
   display: flex;
 
-  &:hover,
-  &:focus {
-    opacity: 0.8;
+  width: 128px;
+  height: 25px;
+
+  cursor: pointer;
+
+  & path {
+    fill: $logo-bg-default;
   }
 
-  &:active {
-    opacity: 0.6;
+  &:hover path,
+  &:focus path {
+    fill: $logo-bg-hover;
+  }
+
+  &:active path {
+    fill: $logo-bg-active;
   }
 }
+

@@ -12,9 +12,12 @@ $basic-grey-5: #e6e6e6;
 $special-grey: #cdcdcd; // special-grey
 $special-grey-2: #ebebeb; // special-grey-2
 $special-grey-3: #666666;
+$special-grey-4: #3e3e3e;
+$special-grey-5: #6b6b6b;
 $special-dark-grey: #444444; // special-dark-grey
 $special-dark-grey-2: #222222; // special-dark-grey-2
 $special-dark-grey-3: #111111;
+$special-dark-grey-4: #403f43;
 $basic-black: #000000;
 $basic-white: #ffffff;
 $status-error: #ff8282; //status-error
@@ -44,6 +47,7 @@ $bg-basic-3: $basic-grey-2; // #eaeaea
 $bg-second: $basic-green; // #68b738
 $bg-second-2: rgba($bg-second, 0.85);
 $bg-second-3: rgba($bg-second, 0.6);
+$bg-third-1: $special-dark-grey-4;
 
 $border-base: $basic-grey-4; // #d9d9d9
 $border-second: $special-grey-2; // #ebebeb
@@ -60,3 +64,7 @@ $input-text: $text-color-base;
 
 $icon-bg: $special-grey-3;
 $icon-bg-hover: $basic-green;
+
+$logo-bg-default:  $special-dark-grey-3; // #111111
+$logo-bg-hover: $special-grey-4;
+$logo-bg-active: $special-grey-5;

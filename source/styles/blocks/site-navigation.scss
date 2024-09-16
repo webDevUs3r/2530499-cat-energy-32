@@ -136,8 +136,13 @@
     $color: $text-color-base-2;
     color: $color;
 
-    &:not(.site-navigation__link--active):hover {
+    &:not(.site-navigation__link--active):hover,
+    &:not(.site-navigation__link--active):focus {
       color: rgba($color, 0.6);
+    }
+
+    &:not(.site-navigation__link--active):active {
+      color: rgba($color, 0.3);
     }
   }
 }
