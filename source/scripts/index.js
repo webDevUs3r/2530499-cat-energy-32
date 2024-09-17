@@ -1,16 +1,5 @@
 /* в этот файл добавляет скрипты*/
-const menuButton = document.querySelector('.toggle-button');
-const mainNav = document.querySelector('.main-navigation');
 
-menuButton.addEventListener('click', () => {
-  if (!menuButton.classList.contains('toggle-button--opened')) {
-    menuButton.classList.add('toggle-button--opened');
-    mainNav.classList.add('main-navigation--opened');
-  } else {
-    menuButton.classList.remove('toggle-button--opened');
-    mainNav.classList.remove('main-navigation--opened');
-  }
-});
 
 const heroButton = document.querySelector('.hero__button');
 
@@ -47,3 +36,23 @@ const scrubberSlide = () => {
 };
 
 scrubberSlide();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.querySelector('.toggle-button');
+  const mainNav = document.querySelector('.main-navigation');
+
+  if (mainNav.classList.contains('main-navigation--no-js')) {
+    mainNav.classList.remove('main-navigation--no-js');
+
+    menuButton.addEventListener('click', () => {
+      if (!menuButton.classList.contains('toggle-button--opened')) {
+        menuButton.classList.add('toggle-button--opened');
+        mainNav.classList.add('main-navigation--opened');
+      } else {
+        menuButton.classList.remove('toggle-button--opened');
+        mainNav.classList.remove('main-navigation--opened');
+      }
+    });
+  }
+});

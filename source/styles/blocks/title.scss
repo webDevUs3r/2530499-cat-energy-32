@@ -21,8 +21,8 @@
 
   width: fit-content;
 
-  background-color: #ffffff;
-  box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;
+  background-color: $border-accent;
+  box-shadow: -40px 0 $border-accent, 40px 0 $border-accent;
 }
 
 .title--decorative-line::before {
@@ -36,9 +36,9 @@
   width: 100vw;
   height: 2px;
 
-  box-shadow: 100vw 0 #68b738;
+  box-shadow: 100vw 0 $border-special;
 
   @media (min-width: $tablet-width) {
-    background-color: #68b738;
+    background-color: $border-special;
   }
 }
