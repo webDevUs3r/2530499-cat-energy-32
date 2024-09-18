@@ -58,7 +58,15 @@
 .extra-products__item {
   border-bottom: 1px solid $border-third;
 
+  &:first-of-type {
+    border-top: 1px solid $border-third;
+  }
+
   @media (min-width: $tablet-width) {
+    &:first-of-type {
+      border-top: none;
+    }
+    
     &:last-of-type {
       border-bottom: none;
     }
