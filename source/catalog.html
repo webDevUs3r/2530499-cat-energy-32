@@ -6,9 +6,10 @@
   <title>Каталог | Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
   <link rel="preload" href="styles/styles.css" as="style">
   <link rel="preload" href="scripts/index.js" as="script">
-  <link rel="preload" href="scripts/map.js" as="script">
 
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -380,8 +381,6 @@
 
         <ul class="extra-products__list">
           <li class="extra-products__item">
-            <span class="split-line split-line--theme-special"></span>
-
             <div class="product-extra">
               <a class="product-extra__link" href="card.html">
                 <h3 class="product-extra__title">Сахарозаменитель</h3>
@@ -395,8 +394,6 @@
               </dl>
               <button class="product-extra__button button button--primary button--size-s" type="button">заказать</button>
             </div>
-
-            <span class="split-line split-line--theme-special"></span>
           </li>
           <li class="extra-products__item">
             <div class="product-extra">
@@ -412,8 +409,6 @@
               </dl>
               <button class="product-extra__button button button--primary button--size-s" type="button">заказать</button>
             </div>
-
-            <span class="split-line split-line--theme-special"></span>
           </li>
           <li class="extra-products__item">
             <div class="product-extra">
@@ -429,8 +424,6 @@
               </dl>
               <button class="product-extra__button button button--primary button--size-s" type="button">заказать</button>
             </div>
-
-            <span class="split-line split-line--theme-special"></span>
           </li>
           <li class="extra-products__item">
             <div class="product-extra">
@@ -446,8 +439,6 @@
               </dl>
               <button class="product-extra__button button button--primary button--size-s" type="button">заказать</button>
             </div>
-
-            <span class="split-line split-line--theme-special"></span>
           </li>
 
         </ul>
@@ -489,7 +480,7 @@
         </div>
       </div>
 
-      <div class="contacts__map" id="map" style="width:100%; height:400px"></div>
+      <div class="contacts__map" id="map" style="min-width: 320px; height:400px"></div>
     </section>
   </div>
 

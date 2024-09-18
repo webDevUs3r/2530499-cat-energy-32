@@ -1,48 +1,32 @@
 .slider-compare {
   position: relative;
-
-  background-color: $bg-basic-3;
-
-  @media (min-width: $tablet-width) {
-    background-color: $bg-basic-1;
-  }
 }
 
-.slider-compare__image-wrapper {
-  display: grid;
-  grid-template: "compare" 1fr / 1fr;
+.slider-compare__list {
+  display: flex;
   width: 100%;
   height: 100%;
 }
 
-.slider-compare picture {
-  grid-area: compare;
-}
-
-.slider-compare picture:nth-child(1) {
-  z-index: 2;
+.slider-compare__item--after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .slider-compare__image {
-  display: block;
+  width: 100%;
   height: 100%;
-  max-width: fit-content;
-
-  object-position: top left;
-  object-fit: none;
-  background-color: $bg-basic-3;
-
-  @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 29.5%, $bg-basic-3 29.5%);
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 26.4%, $bg-basic-2 26.4%);
-  }
+  display: block;
 }
 
 .slider-compare__image--before {
-  z-index: 1;
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider-compare__image--after {
+  position: absolute;
+  clip-path: inset(0 0 0 50%);
 }
 
 .slider-compare__scrubber {

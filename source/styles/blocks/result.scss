@@ -5,18 +5,38 @@
   background-color: $bg-basic-3;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     padding-top: 45px;
     padding-bottom: 101px;
 
     background-color: transparent;
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 57.3%, $bg-basic-3 57.3%);
+    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 619px, $bg-basic-3 619px);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -1px;
+      right: 0;
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $border-fourth;
+      box-shadow: 100vw 0 $border-fourth;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 35px;
     padding-bottom: 75px;
 
-    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 27%, $bg-basic-2 27%);
+    background-image: linear-gradient(to bottom, $bg-basic-1, $bg-basic-1 171px, $bg-basic-2 171px);
+
+    &::before {
+      content: none;
+    }
   }
 }
 

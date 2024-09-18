@@ -27,17 +27,6 @@ if (heroButton) {
   window.addEventListener('resize', changeModificatorOnButton);
 }
 
-const slideImage = document.querySelector('.slider-compare__image--before');
-
-const scrubberSlide = () => {
-  if (slideImage) {
-    slideImage.style.width = '50%';
-  }
-};
-
-scrubberSlide();
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector('.toggle-button');
   const mainNav = document.querySelector('.main-navigation');

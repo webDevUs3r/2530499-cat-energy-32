@@ -19,13 +19,15 @@
   <link rel="preload" media="(min-width: 1280px) and (max-resolution: 1dppx)" href="/images/hero-bg-desktop@1x.webp" as="image" type="image/webp">
   <link rel="preload" media="(min-width: 1280px) and (min-resolution: 2dppx)" href="/images/hero-bg-desktop@2x.webp" as="image" type="image/webp">
 
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" as="font">
   <link rel="preload" href="styles/styles.css" as="style">
   <link rel="preload" href="scripts/index.js" as="script">
-  <link rel="preload" href="scripts/map.js" as="script">
 
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <script src="scripts/map.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
@@ -172,26 +174,29 @@
           </div>
 
           <div class="result__slider slider-compare">
-            <div class="slider-compare__image-wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.webp 1x, images/slide-tablet-before@2x.webp 2x" type="image/webp" width="560" height="512">
+            <div class="slider-compare__list">
+              <div class="slider-compare__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.webp 1x, images/slide-tablet-before@2x.webp 2x" type="image/webp" width="560" height="512">
 
-                <source srcset="images/slide-mobile-before@1x.webp 1x, images/slide-mobile-before@2x.webp 2x" type="image/webp" width="280" height="256">
+                  <source srcset="images/slide-mobile-before@1x.webp 1x, images/slide-mobile-before@2x.webp 2x" type="image/webp" width="280" height="256">
 
-                <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.png 1x, images/slide-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
+                  <source media="(min-width: 768px)" srcset="images/slide-tablet-before@1x.png 1x, images/slide-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
 
-                <img class="slider-compare__image slider-compare__image--before" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" loading="lazy" width="280" height="256" alt="До диеты">
-              </picture>
+                  <img class="slider-compare__image slider-compare__image--before" src="images/slide-mobile-before@1x.png" srcset="images/slide-mobile-before@2x.png 2x" loading="lazy" width="280" height="256" alt="До диеты">
+                </picture>
+              </div>
+              <div class="slider-compare__item slider-compare__item--after">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.webp 1x, images/slide-tablet-after@2x.webp 2x" type="image/webp" width="560" height="512">
 
-              <picture>
-                <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.webp 1x, images/slide-tablet-after@2x.webp 2x" type="image/webp" width="560" height="512">
+                  <source srcset="images/slide-mobile-after@1x.webp 1x, images/slide-mobile-after@2x.webp 2x" type="image/webp" width="280" height="256">
 
-                <source srcset="images/slide-mobile-after@1x.webp 1x, images/slide-mobile-after@2x.webp 2x" type="image/webp" width="280" height="256">
+                  <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.png 1x, images/slide-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
 
-                <source media="(min-width: 768px)" srcset="images/slide-tablet-after@1x.png 1x, images/slide-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
-
-                <img class="slider-compare__image slider-compare__image--after" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" loading="lazy" width="280" height="256" alt="После диеты">
-              </picture>
+                  <img class="slider-compare__image slider-compare__image--after" src="images/slide-mobile-after@1x.png" srcset="images/slide-mobile-after@2x.png 2x" loading="lazy" width="280" height="256" alt="После диеты">
+                </picture>
+              </div>
             </div>
 
             <button class="slider-compare__scrubber" type="button" style="left: 49.3%">
@@ -216,7 +221,7 @@
         </div>
       </div>
 
-      <div class="contacts__map" id="map" style="width:100%; height:400px;"></div>
+      <div class="contacts__map" id="map" style="min-width: 320px; height:400px;"></div>
     </section>
   </div>
 

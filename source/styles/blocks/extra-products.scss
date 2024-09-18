@@ -46,13 +46,28 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
 
-    border-left: 1px solid $special-grey;
-    border-right: 1px solid $special-grey;
+    border: 1px solid $border-third;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: products;
     border: none;
+  }
+}
+
+.extra-products__item {
+  border-bottom: 1px solid $border-third;
+
+  @media (min-width: $tablet-width) {
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:last-of-type {
+      border-bottom: 1px solid $border-third;
+    }
   }
 }
 
