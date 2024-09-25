@@ -73,6 +73,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &:first-child {
+      border-top: 1px solid $border-third;
+    }
+
     &:last-of-type {
       border-bottom: 1px solid $border-third;
     }
